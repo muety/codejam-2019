@@ -7,4 +7,4 @@
 * Assignment 4: not attempted
 
 ## License
-Ferdinand Mütsch
+MIT @ Ferdinand Mütsch
