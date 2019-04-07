@@ -47,6 +47,7 @@ public class Solution {
             if (factors.size() > 2) {
                 List<BigInteger> tooBig = factors.stream().filter(f -> f.compareTo(n) > 0).collect(Collectors.toList());
                 final BigInteger currentVal = minimum.value;
+                factors.removeAll(tooBig);
                 factors.removeAll(tooBig.stream()
                     .map(f1 -> factors.stream().filter(f -> f1.multiply(f).equals(currentVal)).findFirst())
                     .filter(Optional::isPresent)
